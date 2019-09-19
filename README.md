@@ -8,7 +8,9 @@ m=c*K1 mod 26
 *  解密矩阵推导
 其中Kw为K的伴随矩阵，INV为det(K)关于26的模反，可用模反算法求得，见下脚本。
                  c         * (Kw*INV mod 26) mod 26
+                 
  = (m*K mod 26) * (Kw*INV mod 26) mod 26
+ 
 =  (m*K+26*P1) * (Kw*INV+26*P2) mod 26   #P1，P2为整数矩阵
 =   m*K*Kw*INV mod 26 + 0
 =   m*K*K_1*det(K)*INV mod 26       #逆矩K_1 = Kw/det(K)

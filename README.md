@@ -10,7 +10,9 @@ K1= Kw*INV mod 26， 其中Kw为K的伴随矩阵，INV为det(K)关于26的模反
 
 推导过程：
 > c*K1 mod 26
-> =          c   * (Kw*INV mod 26) mod 26                 
+
+> =          c   * (Kw*INV mod 26) mod 26   
+
 > = (m*K mod 26) * (Kw*INV mod 26) mod 26 
 > =  (m*K+26*P1) * (Kw*INV+26*P2) mod 26   #P1，P2为整数矩阵
 > =   m*K*Kw*INV mod 26 + 0
